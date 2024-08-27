@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+    <div class="wrapper" >
+        <div class="header">
+            <nav class="container">
+              <ul class="menu">
+                <li class="logo"><a href="index.html"><img  src="images/hnghii.png" alt=""></a></li>
+                <li><a href="players.html">PLAYERS</a></li>
+                <li><a href="games.html">GAMES</a></li>
+                <li><a href="BRANDS.html">BRANDS</a></li> 
+                <li><a href="map.html">MAP</a></li>
+                <div class="fb">
+                  <a href="https://www.facebook.com/Hnghi201003"><img width="40" height="30" src="images/facebook.svg" alt=""></a>
+                  <a href="https://www.instagram.com/h.nghiiiii/"><img width="40" height="30" src="images/instagram.svg" alt=""></a>
+                  <a href="https://www.youtube.com/channel/UCPVaAZNd42kQ87gt8Wnl4ig"><img width="40" height="30" src="images/youtube.svg" alt=""></a>
+                </div>
+                <div class="giohangg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <div>
+      </div>
+      <div class="giohang">
+        <script>
+            var mangsp=[
+            {
+                ma:1,
+                hinh:"images/743146.jpg",
+                ten:"iphone4",
+                soluong:1,
+                gia:1000
+            },
+            {
+                ma:2,
+                hinh:"images/anh-zero-two-4k-1-16-16-24-30.jpg",
+                ten:"galaxy 20",
+                soluong:3,
+                gia:1000
+            },
+        ]       
+            function napsanpham()
+            {
+                var t=document.getElementById("datarow");
+                t.innerHTML="";
+                for(var i=0;i<mangsp.length;i++)
+                {
+                    var motsp=mangsp[i];
+                    var tr=document.createElement("tr");
+                    tr.innerHTML=`   
+                        <td class="ma">${motsp.ma}</td>
+                        <td class="hinh"><img src="${motsp.hinh}" witch="100" height="100"></td>
+                        <td class="ten">${motsp.ten}</td>
+                        <td class="soluong">
+                            <input type=number value=${motsp.soluong}
+                            onchange="suasoluong(${i},this.value)"></input>
+                         </td>
+                        <td class="gia">${motsp.gia}</td>
+                        <td class="tong">${motsp.soluong*motsp.gia}</td>
+                        <td class="xoa"><button onclick="xoasanpham(${i})">xoa</button></td>
+                    `;
+                    t.appendChild(tr);
+                }
+                tinhtongtien();
+            }
+            function suasoluong(index,value)
+            {
+                mangsp[index].soluong=value;
+                napsanpham();
+            }
+            function xoasanpham(index,value)
+            {
+                mangsp.splice(index,1);
+                napsanpham();
+            }
+            function tinhtongtien()
+            {   
+            var tong=0;
+            for(var i=0;i<mangsp.length;i++)
+            {
+            var motsanpham=mangsp[i];
+            var tonggia=motsanpham.soluong*motsanpham.gia; 
+            tong=tong+tonggia;
+            }
+            document.getElementById("tongtien").innerText=tong;
+}
+        </script>
+        
+    </head>
+    <body onload="napsanpham()">
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Ma</th>
+                    <th>Hinh</th>
+                    <th>Ten</th>
+                    <th>so luong</th>
+                    <th>gia</th>
+                    <th>Thanh Tien</th>
+                    <th>Xoa</th>
+                </tr>
+            </thead>
+            <tbody id="datarow">
+            <!--
+                <tr>
+                    <td class="ma">1</td>
+                    <td class="hinh"><img src="#"></td>
+                    <td class="ten">Apple Ipad 4 Wifi 16GB</td>
+                    <td class="soluong">2</td>
+                    <td class="gia">11,800,000.00</td>
+                    <td class="tong">23,600,000</td>
+                    <td class="xoa"><button>xoa</button></td>
+                </tr>
+            -->    
+            </tbody>
+        </table>
+        <div class="tongtien">tong tien=  <span id="tongtien"></span></div>
+    </body>
+</div>
+                <div class="cuoitrang"> 
+                  <a href=""><img class="logocuoitrang" src="images/hnghii.png" alt=""width="200"></a>
+                  <p>
+                    <ul class="menucuoitrang">
+                       <h2>PRO LIST</h2>
+                       <li ><a href="">CS:GO</a></li>
+                      <li ><a href="">Fortnite</a></li>
+                      <li ><a href="">Overwatch 2</a></li>
+                      <li ><a href="">PUBG</a></li>
+                      <li ><a href="">Rainbow Six</a></li>
+                      <li ><a href="">Apex Legends</a></li>
+                      <li ><a href="">VALORANT</a></li>
+                      <li ><a href="">DOTA 2</a></li>
+                    </ul>
+                    <ul class="menucuoitrang2">
+                      <h2 class="cuoitrang2">GAMES</h2>
+                      <li><a href="">CS:GO</a></li>
+                      <li ><a href="">Fortnite</a></li>
+                      <li ><a href="">Overwatch 2</a></li>
+                      <li ><a href="">PUBG</a></li>
+                      <li ><a href="">Rainbow Six</a></li>
+                      <li ><a href="">Apex Legends</a></li>
+                      <li ><a href="">VALORANT</a></li>
+                      <li ><a href="">DOTA 2</a></li>
+                   </ul>
+                   <ul class="menucuoitrang3">
+                    <h2>GUIDES</h2>
+                      <li ><a href="">Best gaming mouse</a></li>
+                      <li ><a href="">Best gaming monitor</a></li>
+                      <li ><a href="">Best gaming keyboard</a></li>
+                      <li ><a href="">Best gaming headset</a></li>
+                      <li ><a href="">Best gaming mousepad</a></li>
+                      <li><a href="">Best gaming PC for esport</a></li>
+                      <li><a href="">Best gaming chair</a></li>                 
+                   </ul>
+                   <ul class="gioithieu">
+                   <p> NEWBIEGUIDES.VN là trang về thể thao <br> điện tử chúng tôi cung cấp dữ liệu hướng dẫn,<br>
+                    phân tích và đánh giá về thiết bị chơi game <br> cài đặt trò chơi và các game thủ chuyên nghiệp. </h6>
+                  </ul>
+                  </p>
+                  <div class="fb2">
+                    <a href="https://www.facebook.com/Hnghi201003"><img width="40" height="30" src="images/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/h.nghiiiii/"><img width="40" height="30" src="images/instagram.svg" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCPVaAZNd42kQ87gt8Wnl4ig"><img width="40" height="30" src="images/youtube.svg" alt=""></a>
+                    
+                  </div>
+                </div>
+</body>
+</html>

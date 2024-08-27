@@ -1,0 +1,157 @@
+body{
+    background: #f2f7ff;
+  }
+  .container{
+      max-width: 960px;
+      margin: 0px auto;
+  }
+  .header{
+    background: #fff;
+      height: 90px;
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      justify-items: center;
+      margin-right: 50px;
+  }
+  .logo{
+      height: 60px;
+      float: left;
+      margin-top: -100px;
+      margin-bottom: 2px;
+      margin-left: -400px;
+      padding-bottom: -2.5cm;
+      padding-left: 3cm;
+  }
+.menu>.fb>a:hover{
+color: #3460d8;
+}
+.fb{
+  padding-left: 30px;
+  padding-top: 20px;
+  border: none;
+  background: none; 
+  display: block;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+.menu>li>a{
+   color: #222;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.menu>li>a:hover{
+  color: #3460d8;
+}
+.cmt>h1{
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #04111d;
+    margin: 0;
+    float: right;
+    float: bottom;
+    margin-right: 27cm;
+    padding-top: 1cm;
+}
+.cmt>p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #7a7b8c;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #7a7b8c;
+    max-width: clamp(600px,767px,800px);
+    float: right;
+    float: bottom;
+    margin-right: 13cm;
+    padding-top: 2cm;
+}
+.avata{
+    float: top;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    border: solid 1px gray;
+    border-radius:50%;
+    -moz-border-radius:50%;
+   -webkit-border-radius:50%;
+   background-color: gray;
+}
+.cuoitrang{
+    text-align: center;
+    clear: both;
+    background: #fff;
+    color: rgb(16, 16, 16);
+    border-color: rgb(31,30,39);
+    border-radius: 5px 5px 5px 5px;
+    border: 3cm;
+    padding-top: 30px;
+    height: 250px;
+    margin-top: 100px;
+  }
+  .cuoitrang>p>a{
+    text-decoration: underline;
+    color: black;
+  }
+  .logocuoitrang{
+    margin-top: -100px;
+    margin-left: -34cm;
+  }
+  .menucuoitrang{
+   margin-top: -150px;
+   margin-left: 400px;
+   list-style: none;  
+   line-height: 22px;
+   font-weight: 400;
+   text-align: justify;
+  }
+  .menucuoitrang2{
+    padding-right: 200px;
+    margin-left: 700px;
+    list-style: none;
+    margin-top: -240px;
+    text-align: justify;
+    
+  }
+  .menucuoitrang3{
+    padding-left: 250px;
+    margin-left: 800px;
+    list-style: none;
+    margin-top: -220px;
+    text-align: justify;
+  }
+  .menucuoitrang>li>a{
+    text-decoration: none;
+    color: #222;
+  }
+  .menucuoitrang2>li>a{
+    text-decoration: none;
+    color:#222
+  }
+  .menucuoitrang3>li>a{
+    text-decoration: none;
+    color: #222;
+  }
+  .gioithieu{
+  float: top;
+  margin-top: -130px;
+  margin-left: -30px;
+  font-size: 18px;
+  text-align: justify;
+  }
+  .fb2>a{
+  float: left;
+  margin-left: 10px;
+  margin-top: 50px;
+  }
